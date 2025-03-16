@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Feb 23 11:38:01 2025
+# Process ID: 10468
+# Current directory: C:/Users/sande/OneDrive/Documents/xilinx/VottingMachine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3024 C:\Users\sande\OneDrive\Documents\xilinx\VottingMachine\VottingMachine.xpr
+# Log file: C:/Users/sande/OneDrive/Documents/xilinx/VottingMachine/vivado.log
+# Journal file: C:/Users/sande/OneDrive/Documents/xilinx/VottingMachine\vivado.jou
+# Running On: DESKTOP-UES94AE, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 2, Host memory: 8463 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sande/OneDrive/Documents/xilinx/VottingMachine/VottingMachine.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+set_property iostandard LVCMOS33 [get_ports [list {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+place_ports {led[0]} T22
+place_ports {led[1]} T21
+place_ports {led[2]} U22
+place_ports {led[3]} U21
+place_ports {led[4]} V22
+place_ports {led[5]} W22
+place_ports {led[6]} U19
+place_ports {led[7]} U14
+set_property iostandard LVCMOS33 [get_ports [list bt1 bt2 bt3 bt4 clock mode reset]]
+place_ports bt1 T18
+place_ports bt2 R18
+place_ports bt3 R16
+place_ports bt4 N15
+place_ports clock Y9
+place_ports mode F22
+place_ports reset P16
+file mkdir C:/Users/sande/OneDrive/Documents/xilinx/VottingMachine/VottingMachine.srcs/constrs_1/new
+close [ open C:/Users/sande/OneDrive/Documents/xilinx/VottingMachine/VottingMachine.srcs/constrs_1/new/vottingmachine.xdc w ]
+add_files -fileset constrs_1 C:/Users/sande/OneDrive/Documents/xilinx/VottingMachine/VottingMachine.srcs/constrs_1/new/vottingmachine.xdc
+set_property target_constrs_file C:/Users/sande/OneDrive/Documents/xilinx/VottingMachine/VottingMachine.srcs/constrs_1/new/vottingmachine.xdc [current_fileset -constrset]
+save_constraints -force
+create_clock -period 10.000 -name clock -waveform {0.000 5.000} clock
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
