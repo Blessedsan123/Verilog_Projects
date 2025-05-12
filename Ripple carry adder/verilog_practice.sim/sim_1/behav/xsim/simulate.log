@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Sum : 110
+ Carry : 011
+$finish called at time : 3 ns : File "/home/san/Documents/verilog_practice/verilog_practice.srcs/sim_1/new/test_ripple_carry.v" Line 35

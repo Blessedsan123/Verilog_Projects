@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/san/Documents/verilog_practice/verilog_practice.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+/home/san/Documents/verilog_practice/verilog_practice.srcs/sim_1/new/test_ripple_carry.v,1747049897,verilog,,,,test_ripple_carry,,,,,,,,
+/home/san/Documents/verilog_practice/verilog_practice.srcs/sources_1/new/full_adder.v,1747049180,verilog,,/home/san/Documents/verilog_practice/verilog_practice.srcs/sources_1/new/half_adder.v,,full_adder,,,,,,,,
+/home/san/Documents/verilog_practice/verilog_practice.srcs/sources_1/new/half_adder.v,1747048882,verilog,,/home/san/Documents/verilog_practice/verilog_practice.srcs/sources_1/new/ripple_carry_adder.v,,half_adder,,,,,,,,
+/home/san/Documents/verilog_practice/verilog_practice.srcs/sources_1/new/ripple_carry_adder.v,1747050140,verilog,,/home/san/Documents/verilog_practice/verilog_practice.srcs/sim_1/new/test_ripple_carry.v,,ripple_carry_adder,,,,,,,,
